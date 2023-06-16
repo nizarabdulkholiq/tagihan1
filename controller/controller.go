@@ -4,15 +4,14 @@ import (
 	"net/http"
 
 	"github.com/aiteung/musik"
-	gege "github.com/gocroot/kampus/model"
-	gaga "github.com/gocroot/kampus/module"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
-	"github.com/harisriyoni3/iteung/config"
+	"github.com/nizar/tagihan1/config"
+	gaga "github.com/nizarabdulkholiq/nizar"
 	"github.com/whatsauth/whatsauth"
 )
 
-var suratdek = "surat"
+var suratdek = "TagihanSPP"
 var user = "users"
 
 func WsWhatsAuthQR(c *websocket.Conn) {
@@ -50,14 +49,14 @@ func GetSurat(c *fiber.Ctx) error {
 	return c.JSON(getstats)
 }
 
-func GetUserDataNama(c *fiber.Ctx) error {
-	getstats := gaga.GetNamaUser("Haris Riyoni", config.MongoConn, user)
+func GetTagihanSPP(c *fiber.Ctx) error {
+	getstats := gaga.GetTagihanSPP("dua", config.MongoConn, user)
 	return c.JSON(getstats)
 }
 
-func InsertDataSuratChat(c *fiber.Ctx) error {
+func InsertTagihanSPP(c *fiber.Ctx) error {
 	database := config.MongoConn
-	var srt gege.Surat
+	var srt gaga.TagihanSPP
 	if err := c.BodyParser(&srt); err != nil {
 		return err
 	}
