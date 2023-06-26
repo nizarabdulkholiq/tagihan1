@@ -9,8 +9,7 @@ import (
 
 var origins = []string{
 	"https://auth.ulbi.ac.id",
-	"https://harisriyoni3.github.io",
-	"https://harisriyoni.github.io",
+	"https://nizarabdulkholiq.github.io",
 	"https://sip.ulbi.ac.id",
 	"http://127.0.0.1:5500",
 	"http://127.0.0.1:5501",
