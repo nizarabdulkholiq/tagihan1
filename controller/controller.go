@@ -5,7 +5,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
-	"github.com/nizarabdulkholiq/nizar"
+	"github.com/nizarabdulkholiq/nizarbackend"
 	"github.com/nizarabdulkholiq/tagihan1/config"
 	"github.com/whatsauth/whatsauth"
 )
@@ -46,6 +46,6 @@ func GetHome(c *fiber.Ctx) error {
 //	}
 
 func GetTagihanSPP(c*fiber.Ctx) error {
-	getstatus := nizar.GetTagihanSPP("biaya_spp")
+	getstatus := nizarbackend.GetTagihanSPP("biaya_spp")
 	return c.JSON(getstatus)
 }
