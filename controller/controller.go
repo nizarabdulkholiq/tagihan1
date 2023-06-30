@@ -44,10 +44,7 @@ func GetHome(c *fiber.Ctx) error {
 //		getstats := gaga.GetUserData("081234567890", config.MongoConn, user)
 //		return c.JSON(getstats)
 //	}
-func GetTagihanRegistrasi(c*fiber.Ctx) error {
-		getstatus := nizar.GetTagihanRegistrasi("biaya_registrasi")
-		return c.JSON(getstatus)
-}
+
 func GetTagihanSPP(c*fiber.Ctx) error {
 	getstatus := nizar.GetTagihanSPP("biaya_spp")
 	return c.JSON(getstatus)
