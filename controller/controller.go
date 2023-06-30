@@ -1,19 +1,18 @@
 package controller
 
 import (
-	"net/http"
-
 	"github.com/aiteung/musik"
-	gege "github.com/gocroot/kampus/model"
-	gaga "github.com/gocroot/kampus/module"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
-	"github.com/nizar/tagihan1/config"
+	"github.com/nizarabdulkholiq/nizar"
+	"github.com/nizarabdulkholiq/tagihan1/config"
 	"github.com/whatsauth/whatsauth"
 )
 
-var suratdek = "UserTagihan"
-var user = "users"
+var DataTagihanRegistrasi = "tagihanregis"
+var DataTagihanSPP = "tagihanspp"
+
 
 func WsWhatsAuthQR(c *websocket.Conn) {
 	whatsauth.RunSocket(c, config.PublicKey, config.Usertables[:], config.Ulbimariaconn)
@@ -45,27 +44,11 @@ func GetHome(c *fiber.Ctx) error {
 //		getstats := gaga.GetUserData("081234567890", config.MongoConn, user)
 //		return c.JSON(getstats)
 //	}
-func GetTagihan(c *fiber.Ctx) error {
-	getstats := gaga.GetTagihan("Sudah", config.MongoConn, user)
-	return c.JSON(getstats)
+func GetTagihanRegistrasi(c*fiber.Ctx) error {
+		getstatus := nizar.GetDataTagihanRegistrasi("semester")
+		return c.JSON(getstatus)
 }
-
-
-
-func InsertUserTagihan(c *fiber.Ctx) error {
-	database := config.MongoConn
-	var srt gege.UserTagihan
-	if err := c.BodyParser(&srt); err != nil {
-		return err
-	}
-	Inserted := gaga.InsertUserTagihan(database,
-		suratdek,
-		srt.Isisurat,
-		srt.Subject,
-	)
-	return c.JSON(map[string]interface{}{
-		"status":      http.StatusOK,
-		"message":     "Data berhasil disimpan.",
-		"inserted_id": Inserted,
-	})
+func GetTagihanSPP(c*fiber.Ctx) error {
+	getstatus := nizar.GetDataTagihanSPP("semester")
+	return c.JSON(getstatus)
 }

@@ -8,7 +8,7 @@ require (
 	github.com/gocroot/kampus v0.0.3
 	github.com/gofiber/fiber/v2 v2.46.0
 	github.com/gofiber/websocket/v2 v2.2.1
-	github.com/harisriyoni3/iteung v0.0.0-20230612121657-5548e120246f
+	github.com/nizarabdulkholiq/tagihan1 v0.0.0-20230612121657-5548e120246f
 	github.com/whatsauth/whatsauth v0.2.5
 )
 
