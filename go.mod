@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	github.com/aiteung/atdb v0.0.11
+	github.com/nizarabdulkholiq/nizarbackend v0.0.1
 	github.com/aiteung/musik v0.0.5
 	github.com/gofiber/fiber/v2 v2.47.0
 	github.com/gofiber/websocket/v2 v2.2.1
