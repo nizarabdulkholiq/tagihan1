@@ -45,10 +45,10 @@ func GetHome(c *fiber.Ctx) error {
 //		return c.JSON(getstats)
 //	}
 func GetTagihanRegistrasi(c*fiber.Ctx) error {
-		getstatus := nizar.GetDataTagihanRegistrasi("semester")
+		getstatus := nizar.GetTagihanRegistrasi("biaya_registrasi")
 		return c.JSON(getstatus)
 }
 func GetTagihanSPP(c*fiber.Ctx) error {
-	getstatus := nizar.GetDataTagihanSPP("semester")
+	getstatus := nizar.GetTagihanSPP("biaya_spp")
 	return c.JSON(getstatus)
 }

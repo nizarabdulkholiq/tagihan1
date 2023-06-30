@@ -5,10 +5,9 @@ go 1.20
 require (
 	github.com/aiteung/atdb v0.0.11
 	github.com/aiteung/musik v0.0.5
-	github.com/gocroot/kampus v0.0.3
-	github.com/gofiber/fiber/v2 v2.46.0
+	github.com/gofiber/fiber/v2 v2.47.0
 	github.com/gofiber/websocket/v2 v2.2.1
-	github.com/nizarabdulkholiq/tagihan1 v0.0.0-20230612121657-5548e120246f
+	github.com/nizarabdulkholiq/nizar v0.0.1
 	github.com/whatsauth/whatsauth v0.2.5
 )
 
@@ -34,7 +33,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/microsoft/go-mssqldb v1.0.0 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
-	github.com/nizarabdulkholiq/nizar v0.0.1 // indirect
 	github.com/philhofer/fwd v1.1.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
@@ -50,7 +48,7 @@ require (
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20201027041543-1326539a0a0a // indirect
 	go.mau.fi/libsignal v0.1.0 // indirect
-	go.mau.fi/whatsmeow v0.0.0-20230614142319-2114a3c181bd // indirect
+	go.mau.fi/whatsmeow v0.0.0-20230610124725-5dd0baf43eda // indirect
 	go.mongodb.org/mongo-driver v1.11.7 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
 	golang.org/x/sync v0.2.0 // indirect
