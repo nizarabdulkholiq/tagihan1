@@ -46,6 +46,6 @@ func GetHome(c *fiber.Ctx) error {
 //	}
 
 func GetTagihanSPP(c*fiber.Ctx) error {
-	getstatus := nizar.GetTagihanSPP("biaya_spp")
+	getstatus := nizar.GetTagihanSPP("dua")
 	return c.JSON(getstatus)
 }
