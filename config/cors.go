@@ -8,10 +8,14 @@ import (
 )
 
 var origins = []string{
+	"https://nizarabdulkholiq.github.io",
+	"https://nizarabdulkholiq.github.io",
+	"https://https://tagihan1-72686b671e17.herokuapp.com/",
+	"https://gocroot.github.io/",
+	"http://127.0.0.1:5500",
+	"http://127.0.0.1:5501",
 	"https://auth.ulbi.ac.id",
-	
 	"https://sip.ulbi.ac.id",
-
 	"https://euis.ulbi.ac.id",
 	"https://home.ulbi.ac.id",
 	"https://alpha.ulbi.ac.id",
